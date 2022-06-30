@@ -1,3 +1,4 @@
+import 'package:app_ec/src/modules/post/domain/entities/colorsEntities.dart';
 import 'package:app_ec/src/modules/post/presenter/pages/EncarregadorHome.dart';
 import 'package:app_ec/src/modules/post/presenter/pages/NovaSenha.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +31,7 @@ class LoginWidgetState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: const Color(0xFFF5F5F5),
+      backgroundColor:branco,
       body: Form(
         key: formKey,
         autovalidateMode: AutovalidateMode.disabled,
@@ -38,7 +39,7 @@ class LoginWidgetState extends State<LoginPage> {
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height * 1,
           decoration: const BoxDecoration(
-            color: Color(0xFFEEEEEE),
+            color:branco,
           ),
           child: Column(
             mainAxisSize: MainAxisSize.max,
@@ -59,7 +60,7 @@ class LoginWidgetState extends State<LoginPage> {
                   style: TextStyle(
                     fontFamily: 'Poppins',
                     fontSize: 16,
-                    color: Colors.blue,
+                    color: azul,
                     fontWeight: FontWeight.w800,
                   ),
                 ),
@@ -89,20 +90,20 @@ class LoginWidgetState extends State<LoginPage> {
                           decoration: InputDecoration(
                             enabledBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
-                                color: Colors.blue,
+                                color: azul,
                                 width: 2,
                               ),
                               borderRadius: BorderRadius.circular(0),
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
-                                color: Colors.blue,
+                                color: azul,
                                 width: 2,
                               ),
                               borderRadius: BorderRadius.circular(0),
                             ),
                             filled: true,
-                            fillColor: const Color(0xFFE2DEDE),
+                            fillColor: branco,
                             contentPadding:
                                 const EdgeInsetsDirectional.fromSTEB(
                                     5, 5, 5, 5),
@@ -149,13 +150,13 @@ class LoginWidgetState extends State<LoginPage> {
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
-                                color: Colors.blue,
+                                color: azul,
                                 width: 2,
                               ),
                               borderRadius: BorderRadius.circular(0),
                             ),
                             filled: true,
-                            fillColor: const Color(0xFFE2DEDE),
+                            fillColor: branco,
                             contentPadding:
                                 const EdgeInsetsDirectional.fromSTEB(
                                     5, 5, 5, 5),
@@ -169,7 +170,7 @@ class LoginWidgetState extends State<LoginPage> {
                                 textFieldLoginVisibility
                                     ? Icons.visibility_outlined
                                     : Icons.visibility_off_outlined,
-                                color: const Color(0xFF757575),
+                                color: cinza,
                                 size: 22,
                               ),
                             ),
@@ -196,7 +197,7 @@ class LoginWidgetState extends State<LoginPage> {
                         style: TextButton.styleFrom(
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               40, 12, 40, 0),
-                          primary: Colors.blue[400],
+                          primary: azulbebe,
                           textStyle: const TextStyle(fontSize: 20),
                         ),
                         onPressed: () {
@@ -225,7 +226,7 @@ class LoginWidgetState extends State<LoginPage> {
                         style: TextButton.styleFrom(
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               40, 12, 40, 0),
-                          primary: Colors.blue[400],
+                          primary: azulbebe,
                           textStyle: const TextStyle(fontSize: 12),
                         ),
                         onPressed: () {
