@@ -1,3 +1,4 @@
+import 'package:app_ec/src/modules/post/domain/entities/colorsEntities.dart';
 import 'package:flutter/material.dart';
 
 class NovaSenhaPage extends StatefulWidget {
@@ -23,7 +24,7 @@ class NovaSenhaWidgetState extends State<NovaSenhaPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: const Color(0xFFF5F5F5),
+      backgroundColor: branco,
       body: Form(
         key: formKey,
         autovalidateMode: AutovalidateMode.disabled,
@@ -52,7 +53,7 @@ class NovaSenhaWidgetState extends State<NovaSenhaPage> {
                   style: TextStyle(
                     fontFamily: 'Poppins',
                     fontSize: 18,
-                    color: Colors.blue,
+                    color: azul,
                     fontWeight: FontWeight.w800,
                   ),
                 ),
@@ -82,20 +83,20 @@ class NovaSenhaWidgetState extends State<NovaSenhaPage> {
                           decoration: InputDecoration(
                             enabledBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
-                                color: Colors.blue,
+                                color: azul,
                                 width: 2,
                               ),
                               borderRadius: BorderRadius.circular(0),
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
-                                color: Colors.blue,
+                                color: azul,
                                 width: 2,
                               ),
                               borderRadius: BorderRadius.circular(0),
                             ),
                             filled: true,
-                            fillColor: const Color(0xFFE2DEDE),
+                            fillColor: branco,
                             contentPadding:
                                 const EdgeInsetsDirectional.fromSTEB(
                                     5, 5, 5, 5),
@@ -122,7 +123,7 @@ class NovaSenhaWidgetState extends State<NovaSenhaPage> {
                         style: TextButton.styleFrom(
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               40, 12, 40, 0),
-                          primary: Colors.blue[400],
+                          primary: azulbebe,
                           textStyle: const TextStyle(fontSize: 20),
                         ),
                         onPressed: () {

@@ -1,3 +1,4 @@
+import 'package:app_ec/src/modules/post/domain/entities/colorsEntities.dart';
 import 'package:flutter/material.dart';
 
 class EncarregadoHomePage extends StatefulWidget {
@@ -337,7 +338,7 @@ class _HomeEncarregadoWidgetState extends State<EncarregadoHomePage> {
                                   width: 4,
                                   height: 90,
                                   decoration: BoxDecoration(
-                                    color: const Color(0xFF39D2C0),
+                                    color: verdeagua,
                                     borderRadius: BorderRadius.circular(4),
                                   ),
                                 ),
@@ -389,11 +390,11 @@ class _HomeEncarregadoWidgetState extends State<EncarregadoHomePage> {
                       child: Container(
                         width: MediaQuery.of(context).size.width,
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: branco,
                           boxShadow: const [
                             BoxShadow(
                               blurRadius: 3,
-                              color: Color(0x25000000),
+                              color: preto,
                               offset: Offset(0, 2),
                             )
                           ],
@@ -419,7 +420,7 @@ class _HomeEncarregadoWidgetState extends State<EncarregadoHomePage> {
                                   width: 4,
                                   height: 90,
                                   decoration: BoxDecoration(
-                                    color: const Color(0xFF39D2C0),
+                                    color: verdeagua,
                                     borderRadius: BorderRadius.circular(4),
                                   ),
                                 ),
@@ -471,11 +472,11 @@ class _HomeEncarregadoWidgetState extends State<EncarregadoHomePage> {
                       child: Container(
                         width: MediaQuery.of(context).size.width,
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: branco,
                           boxShadow: const [
                             BoxShadow(
                               blurRadius: 3,
-                              color: Color(0x25000000),
+                              color: preto,
                               offset: Offset(0, 2),
                             )
                           ],
@@ -491,7 +492,7 @@ class _HomeEncarregadoWidgetState extends State<EncarregadoHomePage> {
                                 width: 4,
                                 height: 90,
                                 decoration: BoxDecoration(
-                                  color: const Color(0xFF39D2C0),
+                                  color: verdeagua,
                                   borderRadius: BorderRadius.circular(4),
                                 ),
                               ),
@@ -542,11 +543,11 @@ class _HomeEncarregadoWidgetState extends State<EncarregadoHomePage> {
                       child: Container(
                         width: MediaQuery.of(context).size.width,
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: branco,
                           boxShadow: const [
                             BoxShadow(
                               blurRadius: 3,
-                              color: Color(0x25000000),
+                              color: preto,
                               offset: Offset(0, 2),
                             )
                           ],
@@ -572,7 +573,7 @@ class _HomeEncarregadoWidgetState extends State<EncarregadoHomePage> {
                                   width: 4,
                                   height: 90,
                                   decoration: BoxDecoration(
-                                    color: const Color(0xFF39D2C0),
+                                    color: verdeagua,
                                     borderRadius: BorderRadius.circular(4),
                                   ),
                                 ),
@@ -624,11 +625,11 @@ class _HomeEncarregadoWidgetState extends State<EncarregadoHomePage> {
                       child: Container(
                         width: MediaQuery.of(context).size.width,
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: branco,
                           boxShadow: const [
                             BoxShadow(
                               blurRadius: 3,
-                              color: Color(0x25000000),
+                              color: preto,
                               offset: Offset(0, 2),
                             )
                           ],
@@ -654,7 +655,7 @@ class _HomeEncarregadoWidgetState extends State<EncarregadoHomePage> {
                                   width: 4,
                                   height: 90,
                                   decoration: BoxDecoration(
-                                    color: const Color(0xFF39D2C0),
+                                    color: verdeagua,
                                     borderRadius: BorderRadius.circular(4),
                                   ),
                                 ),
