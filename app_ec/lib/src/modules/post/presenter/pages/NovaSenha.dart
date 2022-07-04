@@ -1,4 +1,4 @@
-import 'package:app_ec/src/modules/post/domain/entities/colorsEntities.dart';
+import 'package:app_ec/src/modules/post/domain/entities/stylesColorsEntities.dart';
 import 'package:flutter/material.dart';
 
 class NovaSenhaPage extends StatefulWidget {

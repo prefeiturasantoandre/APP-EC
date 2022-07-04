@@ -1,6 +1,8 @@
-import 'package:app_ec/src/modules/post/domain/entities/colorsEntities.dart';
+import 'package:app_ec/src/modules/post/domain/entities/stylesColorsEntities.dart';
+import 'package:app_ec/src/modules/post/presenter/assets/images.dart';
 import 'package:app_ec/src/modules/post/presenter/pages/EncarregadorHome.dart';
 import 'package:app_ec/src/modules/post/presenter/pages/NovaSenha.dart';
+import 'package:app_ec/src/modules/post/domain/entities/loginControllers.dart';
 import 'package:flutter/material.dart';
 
 
@@ -12,28 +14,17 @@ class LoginPage extends StatefulWidget {
 }
 
 class LoginWidgetState extends State<LoginPage> {
-  late TextEditingController textFieldLoginEmailController;
-  late TextEditingController textFieldLoginSenhaController;
-  late bool textFieldLoginVisibility;
+  
 
-  final formKey = GlobalKey<FormState>();
-  final scaffoldKey = GlobalKey<ScaffoldState>();
-
-  @override
-  void initState() {
-    super.initState();
-    textFieldLoginEmailController = TextEditingController();
-    textFieldLoginSenhaController = TextEditingController();
-    textFieldLoginVisibility = false;
-  }
+ 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      key: scaffoldKey,
+      key: LoginControllers.scaffoldKey,
       backgroundColor:branco,
       body: Form(
-        key: formKey,
+        key: LoginControllers.formKey,
         autovalidateMode: AutovalidateMode.disabled,
         child: Container(
           width: MediaQuery.of(context).size.width,
@@ -46,12 +37,8 @@ class LoginWidgetState extends State<LoginPage> {
             children: [
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(0, 50, 0, 0),
-                child: Image.network(
-                  'https://www2.santoandre.sp.gov.br/images/logos-sec/Logo_5_-_2017-SemSlogan.png',
-                  width: MediaQuery.of(context).size.width,
-                  height: 100,
-                  fit: BoxFit.fitHeight,
-                ),
+                child: imagemLogo,
+                 
               ),
               const Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0, 100, 0, 0),
@@ -85,7 +72,7 @@ class LoginWidgetState extends State<LoginPage> {
                         padding:
                             const EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
                         child: TextFormField(
-                          controller: textFieldLoginEmailController,
+                          controller: LoginControllers.textFieldLoginEmailController,
                           obscureText: false,
                           decoration: InputDecoration(
                             enabledBorder: OutlineInputBorder(
@@ -138,8 +125,8 @@ class LoginWidgetState extends State<LoginPage> {
                         padding:
                             const EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
                         child: TextFormField(
-                          controller: textFieldLoginSenhaController,
-                          obscureText: !textFieldLoginVisibility,
+                          controller: LoginControllers.textFieldLoginSenhaController,
+                          obscureText: LoginControllers.textFieldLoginVisibility,
                           decoration: InputDecoration(
                             enabledBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
@@ -162,12 +149,12 @@ class LoginWidgetState extends State<LoginPage> {
                                     5, 5, 5, 5),
                             suffixIcon: InkWell(
                               onTap: () => setState(
-                                () => textFieldLoginVisibility =
-                                    !textFieldLoginVisibility,
+                                () => LoginControllers.textFieldLoginVisibility =
+                                    LoginControllers.textFieldLoginVisibility,
                               ),
                               focusNode: FocusNode(skipTraversal: true),
                               child: Icon(
-                                textFieldLoginVisibility
+                                LoginControllers.textFieldLoginVisibility
                                     ? Icons.visibility_outlined
                                     : Icons.visibility_off_outlined,
                                 color: cinza,
