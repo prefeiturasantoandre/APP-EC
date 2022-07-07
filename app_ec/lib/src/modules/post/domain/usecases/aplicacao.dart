@@ -1,1 +1,0 @@
-//aplicaçao de funçoes 

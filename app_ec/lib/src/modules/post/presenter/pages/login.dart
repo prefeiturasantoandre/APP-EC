@@ -2,7 +2,7 @@ import 'package:app_ec/src/modules/post/domain/entities/stylesColorsEntities.dar
 import 'package:app_ec/src/modules/post/presenter/assets/images.dart';
 import 'package:app_ec/src/modules/post/presenter/pages/EncarregadorHome.dart';
 import 'package:app_ec/src/modules/post/presenter/pages/NovaSenha.dart';
-import 'package:app_ec/src/modules/post/domain/entities/loginControllers.dart';
+import 'package:app_ec/src/modules/post/domain/entities/loginEntitiesControllers.dart';
 import 'package:flutter/material.dart';
 
 
